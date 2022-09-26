@@ -8,8 +8,10 @@ while line != height:
     while col != width:
         if col == 0 or col == width - 1:
             rectangle += "|"
-        else:
+        elif line == 0 or line == height - 1:
             rectangle += "-"
+        else:
+            rectangle += " "
         col += 1
     rectangle += "\n"
     line += 1
